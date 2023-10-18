@@ -192,6 +192,20 @@ files = [
 ]
 
 [[package]]
+name = "exifread"
+version = "3.0.0"
+description = "Read Exif metadata from tiff and jpeg files."
+optional = false
+python-versions = "*"
+files = [
+    {file = "ExifRead-3.0.0-py3-none-any.whl", hash = "sha256:2c5c59ef03b3bbee75b82b82d2498006b3c13509f35c9a76c7552faff73fa2d5"},
+    {file = "ExifRead-3.0.0.tar.gz", hash = "sha256:0ac5a364169dbdf2bd62f94f5c073970ab6694a3166177f5e448b10c943e2ca4"},
+]
+
+[package.extras]
+dev = ["mypy (==0.950)", "pylint (==2.13.8)"]
+
+[[package]]
 name = "filelock"
 version = "3.12.4"
 description = "A platform independent file lock."
@@ -840,4 +854,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "8e8efd244b2aff2d04cbb437a248c5478249e9922340e7a168a61e953ac8f042"
+content-hash = "1b84a9e73ee11a3b5e2b71c76593549d9edf1353c18414af8d7e9ae4afc24568"
