@@ -1,7 +1,8 @@
-import re
 import os
-import exifread
+import re
 import tempfile
+
+import exifread
 
 ALLOWED_EXTENSIONS = ("tiff", "jpeg", "jpg", "png", "webp", "heic")
 

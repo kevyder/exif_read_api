@@ -1,2 +1,1 @@
-# flask_template
-Flask project template
+# exif_read_api

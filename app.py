@@ -1,11 +1,13 @@
 import os
-from flask import Flask, request, jsonify
+
+from flask import Flask, jsonify, request
+
 from helpers import allowed_file_extension, process_image
 
 app = Flask(__name__)
 
 
-@app.route("/exif", methods=["POST"])
+@app.route("/api/exif", methods=["POST"])
 def exif_data():
     if "image" not in request.files:
         response = jsonify({"message": "No file part in the request"})
@@ -23,7 +25,7 @@ def exif_data():
     if allowed_file_extension(image_extension):
         exif_data = process_image(image)
         response = jsonify(exif_data)
-        response.status_code = 201
+        response.status_code = 200
         return response
     else:
         response = jsonify(

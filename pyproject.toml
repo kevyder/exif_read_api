@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "flask-template"
+name = "exif_read_api"
 version = "0.1.0"
 description = ""
 authors = ["Kevin Rodriguez <kyrodriguez97@gmail.com>"]
